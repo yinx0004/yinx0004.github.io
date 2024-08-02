@@ -71,7 +71,7 @@ kramdown:
 
 prose:
   rooturl: '_posts'
-  siteurl: 'http://yinx0004.github.io/Notepad'
+  siteurl: 'http://yinx0004.github.io/Notepad/'
   relativeLinks: 
   media: 'images'
   metadata:
