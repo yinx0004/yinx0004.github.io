@@ -5,7 +5,7 @@ permalink: /posts/2023/08/rust-begin-here/
 tags:
   - Rust
 comments: true
-featured: true
+featured: false 
 imagefeature: cover10.jpg
 ---
 # Local Rust Installation
