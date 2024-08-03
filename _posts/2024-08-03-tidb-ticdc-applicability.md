@@ -13,11 +13,7 @@ chart:
 comments: true
 featured: true
 ---
-本文主要围绕 TiCDC 不支持的场景中比较难确定的部分内容。根据官方文档：
-- 暂不支持的场景 https://docs.pingcap.com/tidb/stable/ticdc-overview#unsupported-scenarios
-- 最佳实践 https://docs.pingcap.com/tidb/stable/ticdc-overview#best-practices 
-
-其中最不好判断的是这一条：
+本文主要围绕 TiCDC 不支持的场景中比较难确定的部分内容。根据官方文档 [ 暂不支持的场景 ](https://docs.pingcap.com/tidb/stable/ticdc-overview#unsupported-scenarios)  和 [ 最佳实践 ](https://docs.pingcap.com/tidb/stable/ticdc-overview#best-practices)，其中最不好判断的是这一条：
 >TiCDC 同步的表需要至少存在一个有效索引的表，有效索引的定义如下：
 >
 >主键 (PRIMARY KEY) 为有效索引。
