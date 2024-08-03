@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "如何确定我的 TiDB 集群可以使用 TiCDC 同步数据？"
+title: "如何确定 TiDB 集群可以使用 TiCDC 同步数据？"
 description: 
 headline: 
 date: 2024-08-03
 permalink: /posts/2024/08/ticdc-applicability/
 category: TiDB
 tags: [TiCDC]
-imagefeature: cover1.jpg
+imagefeature: cover5.jpg
 mathjax: 
 chart: 
 comments: true
