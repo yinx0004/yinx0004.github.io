@@ -1,6 +1,6 @@
 ---
 title: "TiDB Operator Logging EFK Integration - Part II TiDB Logging Integrate with EFK"
-date: 2024-04-01
+date: 2024-04-07
 permalink: /posts/2024/04/tidb-operator-logging-efk-integration-part-II/
 category: TiDB
 tags: [TiDB, TiDB Operator, EFK, ECK]
