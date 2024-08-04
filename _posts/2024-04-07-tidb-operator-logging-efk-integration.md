@@ -52,6 +52,7 @@ For demo purpose, I will manually mount Fluent-bit config. You may customize you
 ```bash
 kubectl apply -f tidb-fluentbit-cm-slowlog.yaml 
 ```
+**tidb-fluentbit-cm-slowlog.yaml** can be found [here](https://github.com/yinx0004/tidb-operator-logging-efk-integration-demo/blob/main/tidb-operator-logging/tidb-fluentbit-cm-slowlog.yaml).
 
 ##### 2.2 Deploy TiDB Cluster with fluent-bit as sidecar container
 ###### Option 1: fluent-bit in additional container 
@@ -60,6 +61,7 @@ This deployment will keep the default slowlog container, fluent-bit as an additi
 ```bash
 kubectl apply -f tidb-advanced-cluster-additional-container.yaml 
 ```
+**tidb-advanced-cluster-additional-container.yaml** can be found [here](https://github.com/yinx0004/tidb-operator-logging-efk-integration-demo/blob/main/tidb-operator-logging/tidb-advanced-cluster-additional-container.yaml).
 <figure>
         <img src="{{ site.url }}/images/tidb-operator-logging/advanced-cluster.png" alt="advanced-cluster" width="900">
 </figure>
@@ -75,6 +77,7 @@ tidb pod only 2 containers
 ```bash
 kubectl apply -f tidb-advanced-cluster-fluentbit-merged-with-slowlog.yaml 
 ```
+**tidb-advanced-cluster-fluentbit-merged-with-slowlog.yaml** can be found [here](https://github.com/yinx0004/tidb-operator-logging-efk-integration-demo/blob/main/tidb-operator-logging/tidb-advanced-cluster-fluentbit-merged-with-slowlog.yaml).
 <figure>
         <img src="{{ site.url }}/images/tidb-operator-logging/tc-merged.png" alt="tc-merged" width="900">
 </figure>
