@@ -1,65 +1,72 @@
 ---
+layout: post
 title: 'Rust Begin Here'
 date: 2023-08-15
 permalink: /posts/2023/08/rust-begin-here/
+toc: true
 tags:
   - Rust
 comments: true
 featured: false 
 imagefeature: cover10.jpg
 ---
-# Local Rust Installation
-## Install
-```
-$ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+### Local Rust Installation
+#### Install
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 More details refer to the [guide](https://doc.rust-lang.org/book/ch01-01-installation.html).
 
-## Components installed
+#### Components installed
 - cargo: the Rust’s build system and package manager.
 - rustfmt: a tool for formatting Rust code according to style guidelines.
 
-# Hello World!
-## New
+### Hello World!
+#### New
 Create a new project with Cargo
+```bash
+cargo new hello_world
 ```
-$ cargo new hello_world
-     Created binary (application) `hello_world` package
-```
+Output: "Created binary (application) `hello_world` package"
 
 A quick glance
+```bash
+cat hello_world/src/main.rs
 ```
-$ cat hello_world/src/main.rs
+Output:
+```
 fn main() {
     println!("Hello, world!");
 }
 ```
 
-## Build
+#### Build
+```bash
+cd hello_world
+cargo build
 ```
-$ cd hello_world
-$ cargo build
-```
->binary hello_world was created under target/debug
+Output: "binary hello_world was created under target/debug"
 
-## Run
+#### Run
+```bash
+target/debug/hello_world
 ```
-$ target/debug/hello_world
-Hello, world!
-```
+output: "Hello, world!"
 
 or
 
+```bash
+cargo run
 ```
-$ cargo run
+output:
+```
     Finished dev [unoptimized + debuginfo] target(s) in 0.03s
      Running `target/debug/hello_world`
 Hello, world!
 ```
-
-## Project Directory
-```
-$ tree
+#### Project Directory
+```bash
+tree
 .
 ├── Cargo.lock
 ├── Cargo.toml
@@ -99,8 +106,8 @@ $ tree
 ```
 
 
-# IDE Recommendation
-## VSCode
+### IDE Recommendation
+#### VSCode
 Some plugins to recommend:
 - Rust Syntax: provides a TextMate grammar for Rust.
 - rust-analyzer: an implementation of Language Server Protocol for the Rust programming language. It provides features like completion and goto definition for many code editors, including VS Code, Emacs and Vim.
@@ -108,5 +115,5 @@ Some plugins to recommend:
 - Even Better Toml: a TOML language support extension.
 - Rust Test Lens: adds a code lens to quickly run or debug a single test for your Rust code.
 
-## RustRover
+#### RustRover
 From JetBrains, currently RustRover is free to use during the public preview, [download](https://www.jetbrains.com/rust/nextversion/).

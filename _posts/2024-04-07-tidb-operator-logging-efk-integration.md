@@ -1,4 +1,6 @@
 ---
+layout: post
+toc: true
 title: "TiDB Operator Logging EFK Integration"
 date: 2024-04-07
 permalink: /posts/2024/04/tidb-operator-logging-efk-integration/
@@ -82,7 +84,7 @@ kubectl apply -f tidb-advanced-cluster-fluentbit-merged-with-slowlog.yaml
         <img src="{{ site.url }}/images/tidb-operator-logging/tc-merged.png" alt="tc-merged" width="900">
 </figure>
 
-##### 3 View TiDB Slow Query Logs in Kibana
+#### 3. View TiDB Slow Query Logs in Kibana
 1.You will find tidb-yyyy.mm.dd index
 <figure>
         <img src="{{ site.url }}/images/tidb-operator-logging/kibana-tidb-log-index.png" alt="es-operator" width="900">

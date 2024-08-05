@@ -69,7 +69,7 @@ Description: Stay Hungry Stay Foolish
             </header>
 {% endif %}
         {% if page.imagefeature %}<article class="notepad-post-content post">{% else %}<article class="notepad-post-content post tag-simple">{% endif %}
-            <div>{{ content }}
+            <div>{{ content | toc }}
             </div>
         </article>
         <div class="cf"></div>

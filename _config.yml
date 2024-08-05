@@ -70,6 +70,9 @@ kramdown:
 #    coderay_bold_every: 10
 #    coderay_css: class
 
+plugins:
+  - jekyll-toc
+
 prose:
   rooturl: '_posts'
   siteurl: 'http://yinx0004.github.io'
