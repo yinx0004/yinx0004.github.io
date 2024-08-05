@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Kubernetes Logging EFK Deployment"
 date: 2024-04-02
 permalink: /posts/2024/04/kubernetes-logging-efk-deployment/
@@ -7,6 +8,7 @@ tags: [Kubernetes, EFK, ECK, Logging]
 imagefeature: cover2.jpg
 comments: true
 featured: true
+toc: true
 ---
 ❗ This is not a production setup, it's only for testing and demo purpose 
 
