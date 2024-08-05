@@ -47,7 +47,7 @@ select distinct a.table_schema, a.table_name from (select table_schema,table_nam
 
 ### Conclusion
 
-`Tables Without Valid Index` = `All Tables` - `Tables With Valid Index`, if the result set of the follow SQL is not empty, means the TiDB cluster contains tables can not be replicated by TiCDC.
+**Tables Without Valid Index** = **All Tables** - **Tables With Valid Index**, if the result set of the follow SQL is not empty, means the TiDB cluster contains tables can not be replicated by TiCDC.
 
 ```sql
 select table_schema, table_name from information_schema.tables where table_schema not in ('METRICS_SCHEMA','mysql','PERFORMANCE_SCHEMA','INFORMATION_SCHEMA','sys') and table_type='BASE TABLE' and (table_schema, table_name) not in (select distinct table_schema,table_name from information_schema.tidb_indexes where KEY_NAME='PRIMARY' and table_schema not in ('METRICS_SCHEMA','mysql','PERFORMANCE_SCHEMA','INFORMATION_SCHEMA','sys') union all select distinct a.table_schema, a.table_name from (select table_schema,table_name,column_name from information_schema.tidb_indexes where KEY_NAME<>'PRIMARY' and NON_UNIQUE=0 and table_schema not in ('METRICS_SCHEMA','mysql','PERFORMANCE_SCHEMA','INFORMATION_SCHEMA','sys')) a left join (select TABLE_SCHEMA,TABLE_NAME,COLUMN_NAME,IS_NULLABLE,GENERATION_EXPRESSION from information_schema.columns where table_schema not in ('METRICS_SCHEMA','mysql','PERFORMANCE_SCHEMA','INFORMATION_SCHEMA','sys')) b on a.table_schema=b.table_schema and a.table_name=b.table_name and a.column_name=b.column_name where (b.IS_NULLABLE='NO' and b.GENERATION_EXPRESSION=''));
@@ -109,7 +109,7 @@ select distinct a.table_schema, a.table_name from (select table_schema,table_nam
 ```
 
 ### 总结
-最后从所有表中排除含有有效索引的表就是我们需要的没有有效索引的表的集合，如果以下 SQL 的查询结果为非空，则表示 TiDB 集群中包含有不能使用 TiCDC 来同步数据的表：
+**没有有效索引的表** = **所有的表** - **含有有效索引的表**，如果以下 SQL 的查询结果为非空，则表示 TiDB 集群中包含有不能使用 TiCDC 来同步数据的表：
 
 ```sql
 select table_schema, table_name from information_schema.tables where table_schema not in ('METRICS_SCHEMA','mysql','PERFORMANCE_SCHEMA','INFORMATION_SCHEMA','sys') and table_type='BASE TABLE' and (table_schema, table_name) not in (select distinct table_schema,table_name from information_schema.tidb_indexes where KEY_NAME='PRIMARY' and table_schema not in ('METRICS_SCHEMA','mysql','PERFORMANCE_SCHEMA','INFORMATION_SCHEMA','sys') union all select distinct a.table_schema, a.table_name from (select table_schema,table_name,column_name from information_schema.tidb_indexes where KEY_NAME<>'PRIMARY' and NON_UNIQUE=0 and table_schema not in ('METRICS_SCHEMA','mysql','PERFORMANCE_SCHEMA','INFORMATION_SCHEMA','sys')) a left join (select TABLE_SCHEMA,TABLE_NAME,COLUMN_NAME,IS_NULLABLE,GENERATION_EXPRESSION from information_schema.columns where table_schema not in ('METRICS_SCHEMA','mysql','PERFORMANCE_SCHEMA','INFORMATION_SCHEMA','sys')) b on a.table_schema=b.table_schema and a.table_name=b.table_name and a.column_name=b.column_name where (b.IS_NULLABLE='NO' and b.GENERATION_EXPRESSION=''));
