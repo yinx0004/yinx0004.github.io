@@ -29,14 +29,8 @@ This article demonstrates how to collect TiDB logs using `Fluent-bit` in Kuberne
 #### 1. Deploy TiDB Operator
 ```bash
 kubectl create -f https://raw.githubusercontent.com/pingcap/tidb-operator/v1.5.2/manifests/crd.yaml
-```
-```bash
 kubectl create namespace tidb-admin
-```
-```bash
 helm repo add pingcap https://charts.pingcap.org/
-```
-```bash
 helm install --namespace tidb-admin tidb-operator pingcap/tidb-operator --version v1.5.2
 ```
 
