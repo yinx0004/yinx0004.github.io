@@ -1,4 +1,4 @@
-title:            NoDBA
+title:            NODBS
 description:      "Stay Hungry Stay Foolish"
 logo:             logo.png
 disqus_shortname: yinx0004
@@ -11,9 +11,9 @@ url:
 
 # Owner/author information
 owner:
-  name:           Sherry Yin Xi
+  name:           Sherry, Yin Xi
   avatar:         female-developer-background_665280-9660.avif 
-  email:          yinx0004@gmail.com
+  email:          sherry.yin@pingcap.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:    Stay Hungry, Stay Foolish 
   # Social networking links used in footer. Update and remove as you like.
