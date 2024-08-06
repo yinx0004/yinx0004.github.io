@@ -1074,14 +1074,24 @@ img.mfp-img {
 
 pre.highlight > button {
   opacity: 0;
+  padding: 5px 5px;
+  font-size: 0.7rem;
+  margin: 5px 0px 5px 0px;
 }
 
 pre.highlight:hover > button {
   opacity: 1;
+  padding: 5px 5px;
+  font-size: 0.7rem;
+  margin: 5px 0px 5px 0px;
 }
 
 pre.highlight > button:active,
 pre.highlight > button:focus {
   opacity: 1;
+  padding: 5px 5px;
+  font-size: 0.7rem;
+  margin: 5px 0px 5px 0px;
 }
+
 
