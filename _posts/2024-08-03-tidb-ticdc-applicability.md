@@ -10,6 +10,7 @@ featured: true
 ---
 This article focuses on the more **difficult to determine** parts of the TiCDC's limitations. 
 
+<br/>
 Currently, TiCDC unsupported scenarios and limitations as below:
 - A TiKV cluster that uses RawKV alone.
 - The CREATE SEQUENCE DDL operation and the SEQUENCE function in TiDB. When the upstream TiDB uses SEQUENCE, TiCDC ignores SEQUENCE DDL operations/functions performed upstream. However, DML operations using SEQUENCE functions can be correctly replicated.
@@ -18,6 +19,7 @@ Currently, TiCDC unsupported scenarios and limitations as below:
 
 For details, refer to the official documentation [unsupported scenarios](https://docs.pingcap.com/tidb/stable/ticdc-overview#unsupported-scenarios) and [best practices](https://docs.pingcap.com/tidb/stable/ticdc-overview#best-practices).
 
+<br/>
 The most difficult part of these limitations to be identified is **the valid index**:
 >TiCDC only replicates tables that have at least one valid index. A valid index is defined as follows:
 >
@@ -25,6 +27,7 @@ The most difficult part of these limitations to be identified is **the valid ind
 >
 >A unique index (UNIQUE INDEX) is valid if every column of the index is explicitly defined as non-nullable (NOT NULL) and the index does not have a virtual generated column (VIRTUAL GENERATED COLUMNS).
 
+<br/>
 If there are tables in the TiDB cluster without at least one valid index, then these tables cannot use TiCDC to synchronize data. How to find out which tables in the cluster do not have any valid index? 
 
 1.Find tables that have primary key 
