@@ -4,7 +4,7 @@ title: 'TiDB Operator Enable TLS For MySQL Client With cert-manager'
 date: 2024-06-06
 permalink: /posts/2024/06/tidb-operator-tls-mysql-cleint-cert-manager/
 toc: true
-category: TiDB
+category: [TiDB, Kubernetes]
 tags: [TiDB, TiDB Operator, TLS, Kubernetes]
 comments: true
 featured: false 

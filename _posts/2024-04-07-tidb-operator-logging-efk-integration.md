@@ -4,7 +4,7 @@ toc: true
 title: "TiDB Operator Logging EFK Integration"
 date: 2024-04-07
 permalink: /posts/2024/04/tidb-operator-logging-efk-integration/
-category: TiDB
+category: [TiDB, Kubernetes]
 tags: [TiDB, TiDB Operator, EFK, ECK, Kubernetes]
 imagefeature: cover6.jpg
 comments: true
