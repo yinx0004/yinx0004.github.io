@@ -34,7 +34,7 @@ apiVersion: cert-manager.io/v1
 kind: Issuer
 metadata:
   name: tidb-selfsigned-ca-issuer
-  namespace: 
+  namespace: tidb-cluster 
 spec:
   selfSigned: {}
 ---
