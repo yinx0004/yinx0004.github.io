@@ -11,7 +11,7 @@ featured: false
 imagefeature: cover4.jpg
 ---
 TiDB Operatior supports enable and disable TLS for MySQL client for an existing TiDB cluster. This article will show you how to enable it.
-Certificates can be issued by **cfssl** and **cert-manager**, here I will choose the cloud native way `cert-manager`.
+Certificates can be issued by **cfssl** and **cert-manager**, here I will choose the cloud native way *cert-manager*.
 1. We need a self-signed CA
 2. Use the CA to sign certificate for TiDB cluster
 
@@ -24,7 +24,11 @@ helm install cert-manager jetstack/cert-manager --namespace cert-manager --creat
 It will take some time, be patient.
 
 #### Prepare Issuers
-Create `tidb-server-issuer.yaml`.
+TiDB is not a internet facing public services, self-signed issuer and CA is enough.
+There's no naming restrictions for the issuers for TiDB Operator.
+<br/>
+1.Create tidb-server-issuer.yaml
+
 ```yaml
 apiVersion: cert-manager.io/v1
 kind: Issuer
@@ -59,11 +63,15 @@ spec:
     secretName: tidb-ca-secret
 ```
 
+2.Create Issuers
 ```bash
 kubectl apply -f tidb-server-issuer.yaml
 ```
 ```bash
 kubectl get issuer -n tidb-cluster
+```
+Output:
+```plain
 NAMESPACE      NAME                        READY   AGE
 tidb-cluster   tidb-issuer                 True    18s
 tidb-cluster   tidb-selfsigned-ca-issuer   True    18s
@@ -71,8 +79,16 @@ tidb-cluster   tidb-selfsigned-ca-issuer   True    18s
 
 ### Enable TiDB Cluster TLS for Client
 #### Perpare Server Certificates
-Create `tidb-server-cert.yaml`
-```yaml
+We need to issue two sets of certificates:
+- A set of server-side certificates for TiDB server
+- A set of client-side certificates for MySQL client. 
+>Certificate and keys will be stored in secrets, ${cluster_name}-tidb-server-secret and ${cluster_name}-tidb-client-secrete.
+>
+>The Secret objects you created must follow the above naming convention. Otherwise, the deployment of the TiDB cluster will fail.
+
+1.Create tidb-server-cert.yaml
+
+```bash
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
@@ -106,12 +122,15 @@ spec:
     kind: Issuer
     group: cert-manager.io
 ```
+
+2.Issue Certificate for TiDB Server
 ```bash
 kubectl apply -f tidb-server-cert.yaml
 ```
 
 #### Perpare Client Certificates
-Create `tidb-client-cert.yaml`
+1.Create tidb-client-cert.yaml
+
 ```yaml
 apiVersion: cert-manager.io/v1
 kind: Certificate
@@ -133,9 +152,15 @@ spec:
     kind: Issuer
     group: cert-manager.io
 ```
+
+2.Issue Cerficate for MySQL Client
+
 ```bash
 kubectl apply -f tidb-client-cert.yaml
 ```
+
+3.Other Client Components
+Please refer to official [documentaiton](https://docs.pingcap.com/tidb-in-kubernetes/v1.5/enable-tls-for-mysql-client#using-cert-manager).
 
 #### Enable TLS for Client
 For an existing TiDB cluster, just update your tidb cluster manifest set `.spec.tidb.tlsClient.enabled` to `true` as below.
@@ -148,8 +173,9 @@ spec:
       enabled: true             
   ...
 ```
-After apply the above changes, the `tidb` pods and `pd` pods of your TiDB cluster will rolling restart.
+After apply the above changes, the **tidb** and **pd** pods of your TiDB cluster will rolling restart.
 
+<br/>
 Check the logs of PD and TiDB pods
 ```bash
 kubectl logs advanced-test-pd-0 -n tidb-cluster |grep -i tls
@@ -162,12 +188,14 @@ kubectl logs advanced-test-tidb-0 -c tidb -n tidb-cluster |grep tidb-server-tls
 ```
 
 ### MySQL Client Connect to TiDB Cluster with TLS
+1. Save CA/Client Certificate/Private Key
 ```
 kubectl get secret -n tidb-cluster advanced-test-tidb-client-secret  -ojsonpath='{.data.tls\.crt}' | base64 --decode > client-tls.crt
 kubectl get secret -n tidb-cluster advanced-test-tidb-client-secret  -ojsonpath='{.data.tls\.key}' | base64 --decode > client-tls.key
 kubectl get secret -n tidb-cluster advanced-test-tidb-client-secret  -ojsonpath='{.data.ca\.crt}'  | base64 --decode > client-ca.crt
 ```
 
+2. Connect with MySQL Client
 ```
 mysql --comments -uroot -p -P 4000 -h ${tidb_host} --ssl-cert=client-tls.crt --ssl-key=client-tls.key --ssl-ca=client-ca.crt
 ``` 
