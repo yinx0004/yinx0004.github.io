@@ -1,6 +1,9 @@
-title:            NODBS
-description:      "Stay Hungry Stay Foolish"
+title:            Sherry Yin
+description:      "Database & Infra Engineer"
 logo:             logo.png
+# All layouts live in this repo. Disable the github-pages default theme (Primer):
+# its assets/css/style.scss would overwrite our assets/css/style.css.
+theme:            null
 disqus_shortname: yinx0004
 share:            true
 dropcap:			true
@@ -11,11 +14,11 @@ url:
 
 # Owner/author information
 owner:
-  name:           Sherry, Yin Xi
+  name:           Sherry Yin
   avatar:         female-developer-background_665280-9660.avif 
-  email:          sherry.yin@pingcap.com
+  email:          yinxi@ymail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Stay Hungry, Stay Foolish 
+  description:    Database and infrastructure engineer
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
   facebook:       

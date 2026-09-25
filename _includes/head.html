@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<title>{% if page.title %}{{ page.title | upcase }} &vert; {% endif %}{{ site.title | upcase }}</title>
+<title>{% if page.layout == "home" %}{{ site.title }} &vert; {{ site.description }}{% elsif page.title and page.title != site.title %}{{ page.title }} &vert; {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
 
@@ -19,7 +19,7 @@
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:site_name" content="{{ site.title }}">
-{% if page.imagefeature %}<meta property="og:image" content="{{ site.url }}/images/{{ page.imagefeature }}">{% else %}<meta property="og:image" content="{{ site.url }}/images/{{ site.default_bg }}">{% endif %}
+{% if page.imagefeature %}<meta property="og:image" content="{{ site.url }}/images/{{ page.imagefeature }}">{% else %}<meta property="og:image" content="{{ site.url }}/images/{{ site.default_bg | default: site.logo }}">{% endif %}
 
 {% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
 {% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
@@ -42,6 +42,7 @@
     <link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/foundation.min.css">
     <link rel="stylesheet" href="{{ site.url }}/assets/css/style.css">
     <link rel="stylesheet" href="{{ site.url }}/assets/css/post.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/brand.css">
 
 
 {% if page.mathjax %}
@@ -74,6 +75,7 @@
 
 
 <!-- Icons -->
+<link rel="icon" type="image/svg+xml" href="{{ site.url }}/favicon.svg">
 <!-- 16x16 -->
 <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
 <!-- 32x32 -->
