@@ -5,7 +5,7 @@
 Owner Name: Sherry Yin
 Profile: 
 Version: 1.1
-Description: Database & Infra Engineer
+Description: Databases · Distributed Systems · Reliability
 ====================================================
 -->
 <head>
@@ -44,7 +44,7 @@ Description: Database & Infra Engineer
                 {{ site.title }}
             </span>
         </h1>
-        <h2 class="notepad-blog-description">{{ site.description }}</h2>
+        <h2 class="notepad-blog-description"><span class="hero-item">{{ site.description | replace: ' · ', '<span class="hero-sep">&nbsp;·</span></span> <span class="hero-item">' }}</span></h2>
     </div>
 </header>
 

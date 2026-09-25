@@ -1,5 +1,5 @@
 title:            Sherry Yin
-description:      "Database & Infra Engineer"
+description:      "Databases · Distributed Systems · Reliability"
 logo:             logo.png
 # All layouts live in this repo. Disable the github-pages default theme (Primer):
 # its assets/css/style.scss would overwrite our assets/css/style.css.
@@ -18,7 +18,7 @@ owner:
   avatar:         female-developer-background_665280-9660.avif 
   email:          yinxi@ymail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Database and infrastructure engineer
+  description:    Reliability engineer based in Singapore
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
   facebook:       

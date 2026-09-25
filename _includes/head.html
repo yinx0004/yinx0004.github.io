@@ -40,9 +40,9 @@
     <link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/normalize.css">
     <link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/nprogress.css">
     <link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/foundation.min.css">
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/style.css">
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/post.css">
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/brand.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/style.css?v={{ site.time | date: '%s' }}">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/post.css?v={{ site.time | date: '%s' }}">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/brand.css?v={{ site.time | date: '%s' }}">
 
 
 {% if page.mathjax %}

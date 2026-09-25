@@ -61,3 +61,14 @@
   .donate .donate-note {
     font-size: 0.95rem;
     color: #666; }
+
+/* Home hero tagline: keep each "·"-separated topic on one line (dot stays with the
+   word before it); below the theme's 70em large breakpoint, stack topics without dots */
+.hero-item {
+  white-space: nowrap; }
+@media only screen and (max-width: 69.99em) {
+  .hero-sep {
+    display: none; }
+  .hero-item {
+    display: block;
+    white-space: normal; } }
