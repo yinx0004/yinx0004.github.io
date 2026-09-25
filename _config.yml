@@ -23,6 +23,8 @@ owner:
   twitter:        
   facebook:       
   github:         yinx0004      
+  # Buy Me a Coffee username (buymeacoffee.com/<name>); leave blank to hide donate buttons
+  buymeacoffee:   sherryyin
   instagram:      
   # For Google Authorship https://plus.google.com/authorship
   google_plus:    
@@ -46,6 +48,8 @@ links:
     url: /categories
   - title: About
     url: /about
+  - title: Donate
+    url: /donate
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Asia/Singapore

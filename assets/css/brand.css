@@ -21,3 +21,43 @@
     color: white; }
 .notepad-site-head .notepad-blog-logo.brand .brand-name {
   color: black; }
+
+/* Buy Me a Coffee button, post-end support box, and /donate/ page */
+.coffee-button,
+.notepad-page-content > div:not(.notepad-page-title) a.coffee-button,
+.support-cta a.coffee-button {
+  display: inline-block;
+  background: #ffdd00;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: none; }
+  .coffee-button:hover,
+  .notepad-page-content > div:not(.notepad-page-title) a.coffee-button:hover,
+  .support-cta a.coffee-button:hover {
+    background: #ffe94d;
+    color: black; }
+  .coffee-button .fa {
+    margin-right: 0.35rem; }
+.support-cta {
+  max-width: 56.25rem;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-top: 0.25rem solid #e51843;
+  background: #f7f7f7;
+  text-align: center; }
+  .support-cta p {
+    margin-bottom: 1rem; }
+.donate {
+  text-align: center; }
+  .donate p {
+    font-size: 1.125rem; }
+  .donate .coffee-button {
+    margin: 1rem 0 2rem;
+    font-size: 1.125rem; }
+  .donate .donate-note {
+    font-size: 0.95rem;
+    color: #666; }
