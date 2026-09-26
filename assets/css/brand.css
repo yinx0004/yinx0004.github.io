@@ -72,3 +72,9 @@
   .hero-item {
     display: block;
     white-space: normal; } }
+
+/* Post tables: same 900px column as the theme's paragraphs */
+.notepad-post-content table {
+  width: 100%;
+  max-width: 56.25rem;
+  margin: 1.5rem auto; }
