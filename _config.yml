@@ -31,6 +31,11 @@ owner:
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:   
+# Page view statistics with a private GoatCounter dashboard. Set goatcounter to your
+# site code: the <code> in https://<code>.goatcounter.com. Blank disables tracking.
+analytics:
+  provider:       goatcounter
+  goatcounter:    sherryyin
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         
