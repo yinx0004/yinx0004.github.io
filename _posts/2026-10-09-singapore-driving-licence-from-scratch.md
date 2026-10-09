@@ -4,6 +4,7 @@ title: "新加坡从零考驾照全记录（2026）：BTT、PDL 到路考"
 date: 2026-10-09
 permalink: /posts/2026/10/singapore-driving-licence-from-scratch/
 lang: zh-CN
+ref: sg-driving-licence
 category: Life in Singapore
 tags: [新加坡驾照, BTT, PDL, CDC, 中国驾照转换, Life in Singapore]
 description: "在新加坡从零考 3A 驾照的真实记录：CDC 报名后 11 天通过 BTT、拿到 PDL，每一步怎么抢 slot、怎么备考，以及用中国驾照转换时容易忽略的一条居住规定。"
@@ -191,6 +192,8 @@ CDC 有免费的在线理论课，用 Zoom 上，老师会讲考试重点和容�
 
 IE 通过、约好正式 BTT 之后，我在 10 月 7 日约了实践课，最早的空位已经排到 11 月 24 日，要等 7 周左右。所以 IE 一过就可以开始约实践课，不用等 BTT 考完。
 
+实践课的空位没有固定的开放时间。CDC 官网写明，Ubi 的各个班型都"没有固定的放课日期"，要自己经常上网查看。我约到的两节都是早上刷到的，听说空位是不定期释放的。另外，CDC 在 2024 年 7 月公布过预约上限：Ubi 的自动挡学员每月最多约 5 节实践课，手动挡 8 节。
+
 ## 拍照和申请 PDL
 
 BTT 通过后，我直接在 CDC 拍了证件照，工作人员会把数码照片发到邮箱。拍照和考 BTT 安排在同一趟，就不用为了拍照再跑一次。
@@ -234,7 +237,7 @@ CDC 的费用都从预付的储值账户里扣，要先充值才能预约。
 - 约 slot 时先占一个，再继续刷更早的，有就改期。
 - 考 IE 和 BTT 时看清楚按钮，别误点 End Test，否则考试直接结束，slot 作废。
 - 去考 BTT 那天顺便在 CDC 拍照，省一趟。
-- IE 通过后就开始约实践课，空位可能要排一个多月。
+- IE 通过后就开始约实践课，空位可能要排一个多月。空位不定期释放，没有固定时间，要经常刷，我是早上刷到的。
 - 时间允许的话约非高峰时段的实践课，每节便宜将近 10 新元。
 - Induction Programme 不能取消或改期，别和 IE 约得太近。
 
@@ -269,6 +272,8 @@ CDC 的费用都从预付的储值账户里扣，要先充值才能预约。
 - [外国驾照转换预评估表](https://form.gov.sg/63d22456f2bd6c0012319c64)
 - [Basic Theory of Driving 官方手册（英文 PDF）](https://www.police.gov.sg/-/media/SPF/Advisories/TP/BT-ENG-2126.pdf)
 - [CDC Class 3/3A 课程](https://www.cdc.com.sg/course/class-33a/)
+- [CDC 放课日期说明（Session Opening Dates）](https://www.cdc.com.sg/session-opening-dates/)
+- [CDC 实践课每月预约上限](https://www.cdc.com.sg/2024/07/01/school-motorcar-practical-lesson-booking-limit/)
 - [Road Traffic (Motor Vehicles, Driving Licences) Rules（视力要求出处）](https://sso.agc.gov.sg/SL/RTA1961-R27)
 
 *费用按 2026 年 10 月 CDC 官网价格。最后更新：2026 年 10 月 9 日。*

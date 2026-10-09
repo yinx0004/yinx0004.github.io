@@ -1,0 +1,4 @@
+{% comment %}Links a post to its other-language versions: posts sharing the same `ref` front matter value.{% endcomment %}
+{% if page.ref %}{% assign versions = site.posts | where: "ref", page.ref %}{% for p in versions %}{% if p.url != page.url %}
+<div class="translation-note">{% if p.lang == "zh-CN" %}This post is also available in Chinese: <a href="{{ site.url }}{{ p.url }}" hreflang="zh-CN" lang="zh-CN">中文版</a>{% else %}本文也有英文版：<a href="{{ site.url }}{{ p.url }}" hreflang="en" lang="en">English version</a>{% endif %}</div>
+{% endif %}{% endfor %}{% endif %}

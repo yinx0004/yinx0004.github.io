@@ -67,7 +67,7 @@ Description: Databases · Distributed Systems · Reliability
             </header>
 {% endif %}
         {% if page.imagefeature %}<article class="notepad-post-content post">{% else %}<article class="notepad-post-content post tag-simple">{% endif %}
-            <div>{{ content | toc }}
+            <div>{% include translations.html %}{{ content | toc }}
             </div>
         </article>
         <div class="cf"></div>

@@ -78,3 +78,19 @@
   width: 100%;
   max-width: 56.25rem;
   margin: 1.5rem auto; }
+
+/* Link to the other-language version of a post */
+.translation-note {
+  max-width: 56.25rem;
+  margin: 0 auto 1.5rem;
+  padding: 0.6rem 1rem;
+  border-left: 0.25rem solid #e51843;
+  background: #f7f7f7;
+  font-size: 0.95rem; }
+
+/* Theme fix: after the sliced cover animation (.modify), the post header (z-index: 1)
+   still overlaps the top of the content and swallows clicks on the first links
+   (translation note, table of contents). Lift the content above it. */
+.post-template .intro-effect-sliced.modify .notepad-post-content {
+  position: relative;
+  z-index: 2; }
