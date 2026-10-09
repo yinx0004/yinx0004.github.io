@@ -1,0 +1,9 @@
+{% comment %}
+  Table of contents built with plain Liquid, because GitHub Pages does not run the
+  jekyll-toc plugin. Lists the post's h2 headings, or h3 when a post has no h2.
+  Usage: {% include toc.html html=content %} on pages with `toc: true`.
+{% endcomment %}{% if page.toc %}{% assign level = "h2" %}{% assign parts = include.html | split: '<h2 id="' %}{% if parts.size < 2 %}{% assign level = "h3" %}{% assign parts = include.html | split: '<h3 id="' %}{% endif %}{% if parts.size > 1 %}{% assign close = '</' | append: level | append: '>' %}
+<ul id="toc" class="section-nav">
+{% for part in parts offset:1 %}{% assign inner = part | split: close | first %}{% assign id = inner | split: '"' | first %}{% assign text = inner | remove_first: id | remove_first: '">' | strip_html | strip %}<li class="toc-entry toc-{{ level }}"><a href="#{{ id }}">{{ text }}</a></li>
+{% endfor %}</ul>
+{% endif %}{% endif %}
