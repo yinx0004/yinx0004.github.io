@@ -62,6 +62,28 @@
     font-size: 0.95rem;
     color: #666; }
 
+/* 404 page */
+.not-found {
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: center; }
+  .not-found p {
+    font-size: 1.125rem; }
+  .not-found h2 {
+    font-size: 1.5rem;
+    margin: 2.5rem 0 1rem; }
+  .not-found ul {
+    list-style: none;
+    margin: 0;
+    text-align: left; }
+  .not-found li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee; }
+  .not-found .not-found-date {
+    color: #999;
+    font-size: 0.875rem;
+    white-space: nowrap; }
+
 /* Home hero tagline: keep each "·"-separated topic on one line (dot stays with the
    word before it); below the theme's 70em large breakpoint, stack topics without dots */
 .hero-item {
