@@ -24,7 +24,7 @@ owner:
   twitter:        
   facebook:       
   github:         yinx0004      
-  # Buy Me a Coffee username (buymeacoffee.com/<name>); leave blank to hide donate buttons
+  # Buy Me a Coffee username (buymeacoffee.com/<name>); leave blank to hide coffee buttons
   buymeacoffee:   sherryyin
   instagram:      
   # For Google Authorship https://plus.google.com/authorship
@@ -54,8 +54,8 @@ links:
     url: /categories
   - title: About
     url: /about
-  - title: Donate
-    url: /donate
+  - title: Buy me a coffee
+    url: /coffee
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Asia/Singapore
@@ -85,6 +85,7 @@ kramdown:
 
 plugins:
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 prose:
   rooturl: '_posts'

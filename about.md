@@ -20,3 +20,5 @@ I’m fascinated by how systems fail — what happens when a dependency slows do
 This site is where I write about those problems and the lessons behind them: databases, distributed systems, reliability, resilience, and operating complex systems in the real world.
 
 Say hello: [{{ site.owner.email }}](mailto:{{ site.owner.email }})
+
+If you enjoy the posts, you can [buy me a coffee]({{ site.url }}/coffee/).
