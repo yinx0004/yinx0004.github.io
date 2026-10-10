@@ -76,14 +76,14 @@ The numbers come from whatever period you query, so the period has to contain th
 
 ## Step 2: Measure usage per component and resource
 
-A TiDB cluster has four main components, and each one runs out of something different:
+A TiDB cluster has four main components. Every node runs node_exporter, so host metrics for CPU, memory, disk IOPS, disk bandwidth and network bandwidth exist for all four, and all of them should go through the calculation. Each component uses disk and network differently, though, so they tend to run out of different things:
 
-| Component | Resources worth measuring |
-|---|---|
-| TiDB (SQL layer) | CPU, memory, network bandwidth |
-| TiKV (row storage) | CPU, storage, disk IOPS, disk bandwidth, network bandwidth |
-| TiFlash (column storage) | CPU, memory, storage, disk bandwidth, network bandwidth |
-| PD (placement and timestamps) | CPU, memory |
+| Component | What disk and network are used for | Usually runs out of |
+|---|---|---|
+| TiDB (SQL layer) | Disk: logs, and sorts and hash joins that spill when a large query runs out of memory. Network: client requests, reading from TiKV and TiFlash, returning results | CPU, memory, network bandwidth |
+| TiKV (row storage) | Disk: data, Raft logs, compaction. Network: Raft replication to other replicas, serving reads and writes from TiDB | CPU, storage, disk IOPS, disk bandwidth |
+| TiFlash (column storage) | Disk: columnar data and background merges. Network: replicating from TiKV, exchanging data between nodes in MPP queries | CPU, memory, storage, disk bandwidth |
+| PD (placement and timestamps) | Disk: etcd for cluster metadata, sensitive to fsync latency. Network: heartbeats, TSO requests | CPU, memory, disk latency |
 
 Disk IOPS, disk bandwidth and network bandwidth are three separate limits, and each needs its own calculation:
 
