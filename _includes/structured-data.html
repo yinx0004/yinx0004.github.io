@@ -1,0 +1,29 @@
+{% comment %}Schema.org JSON-LD: BlogPosting on posts, WebSite on the home page.{% endcomment %}{% assign sd_author_url = site.url | append: "/about/" %}{% if page.layout == "post" %}{% if page.imagefeature %}{% assign sd_image = site.url | append: "/images/" | append: page.imagefeature %}{% else %}{% assign sd_image = site.url | append: "/images/" | append: site.logo %}{% endif %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.description | default: site.description | jsonify }},
+  "image": {{ sd_image | jsonify }},
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+  "dateModified": {{ page.modified | default: page.date | date_to_xmlschema | jsonify }},
+  "inLanguage": {{ page.lang | default: site.lang | jsonify }},
+  "mainEntityOfPage": {{ page.url | prepend: site.url | jsonify }},
+  "author": { "@type": "Person", "name": {{ site.owner.name | jsonify }}, "url": {{ sd_author_url | jsonify }} },
+  "publisher": { "@type": "Person", "name": {{ site.owner.name | jsonify }}, "url": {{ site.url | append: "/" | jsonify }} }
+}
+</script>
+{% elsif page.layout == "home" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": {{ site.title | jsonify }},
+  "description": {{ site.description | jsonify }},
+  "url": {{ site.url | append: "/" | jsonify }},
+  "inLanguage": {{ site.lang | jsonify }},
+  "author": { "@type": "Person", "name": {{ site.owner.name | jsonify }}, "url": {{ sd_author_url | jsonify }} }
+}
+</script>
+{% endif %}

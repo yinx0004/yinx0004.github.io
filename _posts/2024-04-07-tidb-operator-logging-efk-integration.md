@@ -2,6 +2,7 @@
 layout: post
 toc: true
 title: "TiDB Operator Logging EFK Integration"
+description: "Collect TiDB logs on Kubernetes with Fluent Bit and EFK, including a multiline parser for TiDB slow query logs, for clusters deployed with TiDB Operator."
 date: 2024-04-07
 permalink: /posts/2024/04/tidb-operator-logging-efk-integration/
 category: [TiDB, Kubernetes]

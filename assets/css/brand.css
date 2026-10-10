@@ -94,3 +94,19 @@
 .post-template .intro-effect-sliced.modify .notepad-post-content {
   position: relative;
   z-index: 2; }
+
+/* Author name and comments header are h2 (one h1 per post); keep their former h1 size */
+.notepad-author-info .notepad-post-author h2.author-name {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase; }
+.notepad-author-info .notepad-post-author h2.author-name,
+.notepad-disqus h2.notepad-comments-header {
+  font-size: 2.125rem;
+  line-height: 1.4; }
+@media only screen and (min-width: 40.063em) {
+  .notepad-author-info .notepad-post-author h2.author-name,
+  .notepad-disqus h2.notepad-comments-header {
+    font-size: 2.75rem; } }

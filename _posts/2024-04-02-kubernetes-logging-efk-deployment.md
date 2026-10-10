@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Kubernetes Logging EFK Deployment"
+description: "Kubernetes logging with EFK on minikube, step by step: deploy Elasticsearch and Kibana with ECK, run Fluentd as a DaemonSet, and view container logs in Kibana."
 date: 2024-04-02
 permalink: /posts/2024/04/kubernetes-logging-efk-deployment/
 category: Kubernetes 

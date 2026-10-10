@@ -83,7 +83,8 @@ kramdown:
 #    coderay_bold_every: 10
 #    coderay_css: class
 
-plugins: []
+plugins:
+  - jekyll-sitemap
 
 prose:
   rooturl: '_posts'

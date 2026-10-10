@@ -1,5 +1,6 @@
 ---
 title: "How to ensure TiDB cluster can use TiCDC to synchronize data?"
+description: "Find TiDB tables that TiCDC can't replicate: SQL queries on information_schema that list tables without a valid index (a primary key or a NOT NULL unique index)."
 date: 2024-08-03
 permalink: /posts/2024/08/ticdc-applicability/
 category: TiDB

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Building a Global Multi-Write MongoDB Cluster with Zone Sharding"
+description: "How to build a global multi-write MongoDB cluster with zone sharding: local writes per region, write concern and failover trade-offs, and two-way sync with MongoShake."
 date: 2026-09-26
 permalink: /posts/2026/09/mongodb-global-multi-write-zone-sharding/
 category: MongoDB

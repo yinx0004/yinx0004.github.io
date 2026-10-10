@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Rust Begin Here'
+description: "Getting started with Rust: install the toolchain with rustup, create, build and run a Hello World project with Cargo, and choose an IDE (VS Code or RustRover)."
 date: 2023-08-15
 permalink: /posts/2023/08/rust-begin-here/
 toc: true

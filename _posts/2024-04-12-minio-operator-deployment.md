@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'S3 Compatable MinIO Operator Deployment'
+title: 'S3 Compatible MinIO Operator Deployment'
+description: "Deploy S3-compatible MinIO on Kubernetes for testing: install the MinIO Operator with Helm, create a tenant, and add a bucket in the MinIO Console."
 date: 2024-04-12
 permalink: /posts/2024/04/minio-operator-deployment/
 category: [Kubernetes, S3]

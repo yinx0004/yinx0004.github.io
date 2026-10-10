@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'TiDB Operator Enable TLS For MySQL Client With cert-manager'
+description: "Enable TLS for MySQL clients on a TiDB Operator cluster, using cert-manager to issue a self-signed CA plus server and client certificates."
 date: 2024-06-06
 permalink: /posts/2024/06/tidb-operator-tls-mysql-cleint-cert-manager/
 toc: true
