@@ -1,8 +1,10 @@
 ---
 layout: post
 title: "用 Prometheus 指标给分布式数据库做容量规划：以 TiDB 为例"
-date: 2026-10-10
-permalink: /posts/2026/10/tidb-capacity-planning-prometheus/
+date: 2024-10-10
+permalink: /posts/2024/10/tidb-capacity-planning-prometheus/
+redirect_from:
+  - /posts/2026/10/tidb-capacity-planning-prometheus/
 lang: zh-CN
 ref: capacity-planning-prometheus
 category: TiDB

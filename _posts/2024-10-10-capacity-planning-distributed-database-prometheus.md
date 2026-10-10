@@ -1,8 +1,10 @@
 ---
 layout: post
 title: "Capacity Planning a Distributed Database from Prometheus Metrics"
-date: 2026-10-10
-permalink: /posts/2026/10/capacity-planning-distributed-database-prometheus/
+date: 2024-10-10
+permalink: /posts/2024/10/capacity-planning-distributed-database-prometheus/
+redirect_from:
+  - /posts/2026/10/capacity-planning-distributed-database-prometheus/
 lang: en
 ref: capacity-planning-prometheus
 category: TiDB
