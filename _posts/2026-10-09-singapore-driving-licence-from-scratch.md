@@ -47,6 +47,8 @@ toc: true
 | Standard、One Team、Elite Team | | CDC 的三种班型，区别见"选哪种班" |
 | PRM | Premium fee | One Team 和 Elite Team 每节实践课的附加费 |
 | Stored Value | | CDC 的预付储值账户，各项费用从这里扣 |
+| VPC | Vehicular Pre-operative Check | 实践课阶段的一个项目，CDC 价目表里单独收费 |
+| LDCS | Learner Driver Competency Screening | 实践课阶段的一个项目，CDC 价目表里单独收费 |
 | Booking Portal | | CDC 的网上预约系统，网页版和手机 App 都能用 |
 | My Learning Journey | | CDC App 里的学车进度，显示已经完成和下一步要做的环节 |
 | Slot | | 可预约的时段，视力测试、IE、BTT、实践课都要抢 |
@@ -65,25 +67,25 @@ toc: true
 8. 路考
 9. 拿到驾照
 
-Class 3 是手动挡，Class 3A 是自动挡。3A 的驾照只能开自动挡车。
-
 ## 我的时间线：11 天从报名到 PDL
 
 <figure>
 <svg viewBox="0 0 900 310" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="dl-title dl-desc" style="display:block;width:100%;max-width:900px;height:auto;margin:0 auto;font-family:'Open Sans','PingFang SC','Microsoft YaHei',sans-serif">
   <title id="dl-title">从报名到拿 PDL 的时间线</title>
-  <desc id="dl-desc">9 月 28 日在 CDC 报名，9 月 30 日通过视力测试，10 月 3 日参加 Induction Programme 并通过 IE，10 月 7 日预约实践课，10 月 9 日通过 BTT 并申请 PDL，共 11 天。之后等待约 7 周，11 月 24 日和 27 日上前两节实践课。</desc>
+  <desc id="dl-desc">9 月 28 日在 CDC 报名，10 月 2 日通过视力测试，10 月 3 日参加 Induction Programme 并通过 IE，10 月 3 日起刷了 4 天实践课 slot，10 月 7 日才约到，10 月 9 日通过 BTT 并申请 PDL，共 11 天。之后等待约 7 周，11 月 24 日和 27 日上前两节实践课。</desc>
   <line x1="60" y1="150" x2="650" y2="150" stroke="#e51843" stroke-width="3"/>
+  <line x1="332" y1="150" x2="526" y2="150" stroke="#fff" stroke-width="5"/>
+  <line x1="332" y1="150" x2="526" y2="150" stroke="#e8a33d" stroke-width="4" stroke-dasharray="7 5"/>
   <polyline points="655,150 665,140 675,160 685,140 695,160 705,150" fill="none" stroke="#999" stroke-width="2"/>
   <line x1="710" y1="150" x2="870" y2="150" stroke="#2f5d8a" stroke-width="3" stroke-dasharray="6 5"/>
   <circle cx="60" cy="150" r="7" fill="#e51843"/>
   <line x1="60" y1="159" x2="60" y2="172" stroke="#e51843" stroke-width="1.5"/>
   <text x="60" y="190" text-anchor="middle" font-size="13" font-weight="700" fill="#222">9/28</text>
   <text x="60" y="209" text-anchor="middle" font-size="12" fill="#444">CDC 报名</text>
-  <circle cx="165" cy="150" r="7" fill="#e51843"/>
-  <line x1="165" y1="141" x2="165" y2="128" stroke="#e51843" stroke-width="1.5"/>
-  <text x="165" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#222">9/30</text>
-  <text x="165" y="117" text-anchor="middle" font-size="12" fill="#444">视力测试 ✓</text>
+  <circle cx="271" cy="150" r="7" fill="#e51843"/>
+  <line x1="271" y1="141" x2="271" y2="128" stroke="#e51843" stroke-width="1.5"/>
+  <text x="271" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#222">10/2</text>
+  <text x="271" y="117" text-anchor="middle" font-size="12" fill="#444">视力测试 ✓</text>
   <circle cx="324" cy="150" r="7" fill="#e51843"/>
   <line x1="324" y1="159" x2="324" y2="172" stroke="#e51843" stroke-width="1.5"/>
   <text x="324" y="190" text-anchor="middle" font-size="13" font-weight="700" fill="#222">10/3</text>
@@ -95,7 +97,7 @@ Class 3 是手动挡，Class 3A 是自动挡。3A 的驾照只能开自动挡车
   <circle cx="640" cy="150" r="9" fill="#e51843"/>
   <line x1="640" y1="159" x2="640" y2="172" stroke="#e51843" stroke-width="1.5"/>
   <text x="640" y="190" text-anchor="middle" font-size="13" font-weight="700" fill="#222">10/9</text>
-  <text x="640" y="209" text-anchor="middle" font-size="12" fill="#444">BTT ✓ · PDL</text>
+  <text x="640" y="209" text-anchor="middle" font-size="12" font-weight="700" fill="#e51843">BTT ✓ · PDL ✓</text>
   <circle cx="740" cy="150" r="7" fill="#fff" stroke="#2f5d8a" stroke-width="2"/>
   <line x1="740" y1="141" x2="740" y2="128" stroke="#2f5d8a" stroke-width="1.5"/>
   <text x="740" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#222">11/24</text>
@@ -104,6 +106,7 @@ Class 3 是手动挡，Class 3A 是自动挡。3A 的驾照只能开自动挡车
   <line x1="840" y1="159" x2="840" y2="172" stroke="#2f5d8a" stroke-width="1.5"/>
   <text x="840" y="190" text-anchor="middle" font-size="13" font-weight="700" fill="#222">11/27</text>
   <text x="840" y="209" text-anchor="middle" font-size="12" fill="#444">实践课 2</text>
+  <text x="455" y="200" text-anchor="middle" font-size="12" font-weight="700" fill="#a35f00">刷了 4 天 slot</text>
   <line x1="60" y1="252" x2="640" y2="252" stroke="#e51843" stroke-width="1.5"/>
   <line x1="60" y1="245" x2="60" y2="259" stroke="#e51843" stroke-width="1.5"/>
   <line x1="640" y1="245" x2="640" y2="259" stroke="#e51843" stroke-width="1.5"/>
@@ -112,15 +115,14 @@ Class 3 是手动挡，Class 3A 是自动挡。3A 的驾照只能开自动挡车
   <line x1="725" y1="252" x2="860" y2="252" stroke="#2f5d8a" stroke-width="1.5" stroke-dasharray="4 3"/>
   <text x="792" y="280" text-anchor="middle" font-size="12" fill="#2f5d8a">已预约的实践课</text>
 </svg>
-<figcaption>前 11 天按实际天数比例绘制；实心点是已完成的步骤，空心点是已预约、还没上的实践课。</figcaption>
 </figure>
 
 | 日期 | 进度 | 距报名 |
 |---|---|---|
 | 9 月 28 日 | 在 CDC 网上报名 Class 3A | 第 0 天 |
-| 9 月 30 日 | 现场视力测试，通过 | 第 2 天 |
+| 10 月 2 日 | 现场视力测试，通过 | 第 4 天 |
 | 10 月 3 日 | Zoom 参加 Induction Programme，然后现场考 IE，通过 | 第 5 天 |
-| 10 月 7 日 | 预约实践课，最早的空位在 11 月 24 日 | 第 9 天 |
+| 10 月 7 日 | 预约实践课：10 月 3 日起每天刷 slot，第 4 天才约到，最早的空位在 11 月 24 日 | 第 9 天 |
 | 10 月 9 日 | 现场考 BTT，通过；在 CDC 拍照，在线申请 PDL | 第 11 天 |
 
 能这么快，主要是每一步都抢到了比较早的 slot。
@@ -154,6 +156,11 @@ CDC 的 Class 3A 在 Ubi 有三种班型，区别在于训练车和教练是否�
 
 建议把 CDC 的手机 App 也装上，随时可以查看 My Learning Journey，也就是自己的学车进度到了哪一步、下一步要做什么，预约也很方便。
 
+<figure style="display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;max-width:640px;margin:1.5rem auto">
+  <img src="{{ site.url }}/images/cdc-app-learning-journey-1.webp" alt="CDC App 的 My Learning Journey：报名和会籍、视力测试、PDL 有效期，以及 BTT 和 FTT 的进度" style="flex:1 1 260px;max-width:300px;width:auto;height:auto;margin:0">
+  <img src="{{ site.url }}/images/cdc-app-learning-journey-2.webp" alt="CDC App 的 My Learning Journey：模拟器培训、实践课各模块，以及路考" style="flex:1 1 260px;max-width:300px;width:auto;height:auto;margin:0">
+</figure>
+
 ## 报名和视力测试
 
 在 CDC 网上报名后，会收到一封邮件，按邮件里的方式预约视力测试。邮件可能被归到垃圾邮件，记得检查。
@@ -165,13 +172,13 @@ CDC 的 Class 3A 在 Ubi 有三种班型，区别在于训练车和教练是否�
 
 视力测试的 slot 很紧张，要靠刷。我的观察是，每天大约早上 9 点半开放预约，晚上 6 点半左右关闭，开放期间可以不停刷新。我的做法是先约一个能约到的时间，然后继续刷，看到更早的就改期。
 
-这里要注意的是顺序：**视力测试通过后才能约 IE，IE 通过后才能约 BTT**。每一项都要到现场，每一项都要抢 slot。前一项一过就马上去约下一项，整体节奏才不会拖长。
+要注意顺序：视力测试通过后才能约 IE，IE 通过后才能约 BTT。这三项都要到现场，都要抢 slot，所以每过一项就马上约下一项。
 
 ## Induction Programme 和 IE（内部模拟考）
 
-**IE（Internal Evaluation）** 是 CDC 的内部模拟考，形式和 Traffic Police 的正式考试一样。第一次学车的驾校学员必须到现场通过 IE，才能预约正式的 BTT。
+IE（Internal Evaluation）是 CDC 的内部模拟考，形式和 Traffic Police 的正式考试一样。第一次学车的驾校学员必须到现场通过 IE，才能预约正式的 BTT。
 
-**Induction Programme** 是 CDC 的入学介绍，讲后面整个学车流程，我约的是 Zoom 的场次。CDC 官网写明，Induction Programme **不可以取消，也不可以改期**。
+Induction Programme 是 CDC 的入学介绍，讲后面整个学车流程，我约的是 Zoom 的场次。CDC 官网写明，Induction Programme 不可以取消，也不可以改期。
 
 我把两项约在了同一天：先在线上参加 Induction Programme，然后去考 IE。结果 IE 开考时 Induction Programme 还没结束，我只好提前退出。最后系统还是算我完成了，算是有惊无险。不建议照着这样约，两项之间最好留出足够的时间。
 
@@ -190,7 +197,7 @@ IE 和正式 BTT 的题型一样，都是 50 道选择题，答对 45 道及格�
 
 CDC 有免费的在线理论课，用 Zoom 上，老师会讲考试重点和容易出错的题目，推荐参加。
 
-IE 通过、约好正式 BTT 之后，我在 10 月 7 日约了实践课，最早的空位已经排到 11 月 24 日，要等 7 周左右。所以 IE 一过就可以开始约实践课，不用等 BTT 考完。
+IE 通过、约好正式 BTT 之后，我就开始刷实践课的 slot。连着刷了 4 天都没有合适的空位，到 10 月 7 日才约到，而最早的空位已经排到 11 月 24 日，要等 7 周左右。所以 IE 一过就可以开始约实践课，不用等 BTT 考完。
 
 实践课的空位没有固定的开放时间。CDC 官网写明，Ubi 的各个班型都"没有固定的放课日期"，要自己经常上网查看。我约到的两节都是早上刷到的，听说空位是不定期释放的。另外，CDC 在 2024 年 7 月公布过预约上限：Ubi 的自动挡学员每月最多约 5 节实践课，手动挡 8 节。
 
@@ -245,11 +252,13 @@ CDC 的费用都从预付的储值账户里扣，要先充值才能预约。
 
 这部分正在进行中，考完后会更新到这篇文章里。
 
+从 App 的 My Learning Journey 可以看到后面还有这些环节：Traffic Police 模拟器培训（3 个模块）；实践课的 3 个模块，其中包括 VPC、LDCS、ATC 等项目；最后是路考前的热身课（Warm Up Lesson）和 Traffic Police 路考。另外，App 里 BTT 的有效期显示为 Lifetime，通过后长期有效。
+
 ## 如果你有中国驾照
 
 用中国驾照转换只需要通过 BTT，不用考 FTT 和路考。流程和材料网上已经有很多攻略，办理时以 Traffic Police 的[官方材料清单](https://www.police.gov.sg/-/media/Spf/Advisories/Checklist-of-Documents-for-Conversion-of-China-Driving-Licence.ashx)为准。
 
-有一条规定很多攻略没有讲清楚：如果你的中国驾照是在**拿到第一张新加坡准证（WP、EP、学生准证等）或 PR 之后**才考的，需要额外证明在中国住满 1 年，而且实际在中国居住至少 6 个月。可以用护照出入境记录、在中国的工作证明、学历证明或纳税记录来证明。来新加坡之前就考好的驾照，不需要这项证明。
+有一条规定容易被忽略：如果你的中国驾照是在拿到第一张新加坡准证（WP、EP、学生准证等）或 PR 之后才考的，需要额外证明在中国住满 1 年，而且实际在中国居住至少 6 个月。可以用护照出入境记录、在中国的工作证明、学历证明或纳税记录来证明。来新加坡之前就考好的驾照，不需要这项证明。
 
 另外，非英文驾照要由新加坡注册的翻译公司出具英文翻译件，自己翻译的不收。
 

@@ -47,6 +47,8 @@ Foreigners who have lived in Singapore for less than 12 months can drive on a va
 | Standard, One Team, Elite Team | | CDC's coaching schemes, compared below |
 | PRM | Premium fee | The per-lesson surcharge for One Team and Elite Team |
 | Stored Value | | Your prepaid CDC account. All CDC fees are deducted from it |
+| VPC | Vehicular Pre-operative Check | An item in the practical lesson stage, charged separately in CDC's fee list |
+| LDCS | Learner Driver Competency Screening | An item in the practical lesson stage, charged separately in CDC's fee list |
 | Slot | | A bookable time. Eyesight tests, IEs, BTTs and lessons all need one, and they go fast |
 | Booking Portal | | CDC's online booking system, on the web and in the mobile app |
 | My Learning Journey | | Your progress in the CDC app: what you've completed and what comes next |
@@ -70,18 +72,20 @@ Foreigners who have lived in Singapore for less than 12 months can drive on a va
 <figure>
 <svg viewBox="0 0 900 310" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="dlen-title dlen-desc" style="display:block;width:100%;max-width:900px;height:auto;margin:0 auto;font-family:'Open Sans',sans-serif">
   <title id="dlen-title">Timeline from enrolment to PDL</title>
-  <desc id="dlen-desc">Enrolled at CDC on 28 September, passed the eyesight test on 30 September, attended the Induction Programme and passed the IE on 3 October, booked practical lessons on 7 October, and passed the BTT and applied for the PDL on 9 October: 11 days in total. After a wait of about 7 weeks, the first two practical lessons are on 24 and 27 November.</desc>
+  <desc id="dlen-desc">Enrolled at CDC on 28 September, passed the eyesight test on 2 October, attended the Induction Programme and passed the IE on 3 October, refreshed for practical lesson slots for four days from 3 October and booked them on 7 October, and passed the BTT and applied for the PDL on 9 October: 11 days in total. After a wait of about 7 weeks, the first two practical lessons are on 24 and 27 November.</desc>
   <line x1="60" y1="150" x2="650" y2="150" stroke="#e51843" stroke-width="3"/>
+  <line x1="332" y1="150" x2="526" y2="150" stroke="#fff" stroke-width="5"/>
+  <line x1="332" y1="150" x2="526" y2="150" stroke="#e8a33d" stroke-width="4" stroke-dasharray="7 5"/>
   <polyline points="655,150 665,140 675,160 685,140 695,160 705,150" fill="none" stroke="#999" stroke-width="2"/>
   <line x1="710" y1="150" x2="870" y2="150" stroke="#2f5d8a" stroke-width="3" stroke-dasharray="6 5"/>
   <circle cx="60" cy="150" r="7" fill="#e51843"/>
   <line x1="60" y1="159" x2="60" y2="172" stroke="#e51843" stroke-width="1.5"/>
   <text x="60" y="190" text-anchor="middle" font-size="13" font-weight="700" fill="#222">28 Sep</text>
   <text x="60" y="209" text-anchor="middle" font-size="12" fill="#444">Enrolled at CDC</text>
-  <circle cx="165" cy="150" r="7" fill="#e51843"/>
-  <line x1="165" y1="141" x2="165" y2="128" stroke="#e51843" stroke-width="1.5"/>
-  <text x="165" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#222">30 Sep</text>
-  <text x="165" y="117" text-anchor="middle" font-size="12" fill="#444">Eyesight test ✓</text>
+  <circle cx="271" cy="150" r="7" fill="#e51843"/>
+  <line x1="271" y1="141" x2="271" y2="128" stroke="#e51843" stroke-width="1.5"/>
+  <text x="271" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#222">2 Oct</text>
+  <text x="271" y="117" text-anchor="middle" font-size="12" fill="#444">Eyesight test ✓</text>
   <circle cx="324" cy="150" r="7" fill="#e51843"/>
   <line x1="324" y1="159" x2="324" y2="172" stroke="#e51843" stroke-width="1.5"/>
   <text x="324" y="190" text-anchor="middle" font-size="13" font-weight="700" fill="#222">3 Oct</text>
@@ -89,36 +93,36 @@ Foreigners who have lived in Singapore for less than 12 months can drive on a va
   <circle cx="534" cy="150" r="7" fill="#e51843"/>
   <line x1="534" y1="141" x2="534" y2="128" stroke="#e51843" stroke-width="1.5"/>
   <text x="534" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#222">7 Oct</text>
-  <text x="534" y="117" text-anchor="middle" font-size="12" fill="#444">Booked lessons</text>
+  <text x="534" y="117" text-anchor="middle" font-size="12" fill="#444">Booked practical lessons</text>
   <circle cx="640" cy="150" r="9" fill="#e51843"/>
   <line x1="640" y1="159" x2="640" y2="172" stroke="#e51843" stroke-width="1.5"/>
   <text x="640" y="190" text-anchor="middle" font-size="13" font-weight="700" fill="#222">9 Oct</text>
-  <text x="640" y="209" text-anchor="middle" font-size="12" fill="#444">BTT ✓ · PDL</text>
+  <text x="640" y="209" text-anchor="middle" font-size="12" font-weight="700" fill="#e51843">BTT ✓ · PDL ✓</text>
   <circle cx="740" cy="150" r="7" fill="#fff" stroke="#2f5d8a" stroke-width="2"/>
   <line x1="740" y1="141" x2="740" y2="128" stroke="#2f5d8a" stroke-width="1.5"/>
   <text x="740" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#222">24 Nov</text>
-  <text x="740" y="117" text-anchor="middle" font-size="12" fill="#444">Lesson 1</text>
+  <text x="740" y="117" text-anchor="middle" font-size="12" fill="#444">Practical lesson 1</text>
   <circle cx="840" cy="150" r="7" fill="#fff" stroke="#2f5d8a" stroke-width="2"/>
   <line x1="840" y1="159" x2="840" y2="172" stroke="#2f5d8a" stroke-width="1.5"/>
   <text x="840" y="190" text-anchor="middle" font-size="13" font-weight="700" fill="#222">27 Nov</text>
-  <text x="840" y="209" text-anchor="middle" font-size="12" fill="#444">Lesson 2</text>
+  <text x="840" y="209" text-anchor="middle" font-size="12" fill="#444">Practical lesson 2</text>
+  <text x="472" y="200" text-anchor="middle" font-size="12" font-weight="700" fill="#a35f00">4 days refreshing for slots</text>
   <line x1="60" y1="252" x2="640" y2="252" stroke="#e51843" stroke-width="1.5"/>
   <line x1="60" y1="245" x2="60" y2="259" stroke="#e51843" stroke-width="1.5"/>
   <line x1="640" y1="245" x2="640" y2="259" stroke="#e51843" stroke-width="1.5"/>
   <text x="350" y="280" text-anchor="middle" font-size="13" font-weight="700" fill="#e51843">11 days: enrolment to PDL</text>
   <text x="680" y="280" text-anchor="middle" font-size="12" fill="#777">~7 weeks</text>
   <line x1="725" y1="252" x2="860" y2="252" stroke="#2f5d8a" stroke-width="1.5" stroke-dasharray="4 3"/>
-  <text x="792" y="280" text-anchor="middle" font-size="12" fill="#2f5d8a">Booked lessons</text>
+  <text x="792" y="280" text-anchor="middle" font-size="12" fill="#2f5d8a">Booked practical lessons</text>
 </svg>
-<figcaption>The first 11 days are drawn to scale. Filled dots are completed steps; hollow dots are practical lessons that are booked but not yet taken.</figcaption>
 </figure>
 
 | Date | Step | Day |
 |---|---|---|
 | 28 Sep | Enrolled online at CDC for Class 3A | 0 |
-| 30 Sep | Eyesight test on site, passed | 2 |
+| 2 Oct | Eyesight test on site, passed | 4 |
 | 3 Oct | Induction Programme on Zoom, then the IE on site, passed | 5 |
-| 7 Oct | Booked practical lessons; the earliest slot was 24 Nov | 9 |
+| 7 Oct | Booked practical lessons after refreshing for slots every day since 3 Oct; the earliest slot was 24 Nov | 9 |
 | 9 Oct | BTT on site, passed; photo taken at CDC; applied for the PDL online | 11 |
 
 The main reason it went this fast is that I kept getting early slots for each step.
@@ -152,6 +156,11 @@ The others come up too: **Top-Up Store Value** to add money to your account, **C
 
 Install the CDC mobile app as well. It shows My Learning Journey, so you can see at a glance which step you're on and what's next, and booking from it is easy.
 
+<figure style="display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;max-width:640px;margin:1.5rem auto">
+  <img src="{{ site.url }}/images/cdc-app-learning-journey-1.webp" alt="My Learning Journey in the CDC app: enrolment and membership, eyesight test, PDL expiry, and BTT and FTT progress" style="flex:1 1 260px;max-width:300px;width:auto;height:auto;margin:0">
+  <img src="{{ site.url }}/images/cdc-app-learning-journey-2.webp" alt="My Learning Journey in the CDC app: simulator training, practical lesson modules and the practical test" style="flex:1 1 260px;max-width:300px;width:auto;height:auto;margin:0">
+</figure>
+
 ## Enrolment and the eyesight test
 
 After enrolling online, you'll get an email telling you how to book the eyesight test. Check your spam folder if you don't see it.
@@ -163,13 +172,13 @@ The test covers eyesight and colour vision. Under Singapore's Road Traffic (Moto
 
 Eyesight test slots are hard to get. From what I saw, bookings open at around 9:30 am each day and close at around 6:30 pm, and you can keep refreshing while it's open. I booked whatever I could get first, then kept checking and rescheduled whenever an earlier slot appeared.
 
-The order matters: **you can only book the IE after passing the eyesight test, and only book the BTT after passing the IE**. Each one is on site, and each one needs a slot. Book the next step as soon as you pass the previous one, or the whole process drags on.
+The order matters: you can only book the IE after passing the eyesight test, and only book the BTT after passing the IE. All three are on site and need a slot, so book the next one as soon as you pass.
 
 ## Induction Programme and IE (Internal Evaluation)
 
-**The IE** is CDC's in-house mock test, in the same format as the Traffic Police test. First-time learners at CDC have to pass it in person before they can book the real BTT.
+The IE is CDC's in-house mock test, in the same format as the Traffic Police test. First-time learners at CDC have to pass it in person before they can book the real BTT.
 
-**The Induction Programme** introduces CDC's learning journey. I took it on Zoom. CDC says it **can't be cancelled or rescheduled**.
+The Induction Programme introduces CDC's learning journey. I took it on Zoom. CDC says it can't be cancelled or rescheduled.
 
 I booked both on the same day: the Induction Programme online first, then the IE on site. The IE started before the Induction Programme ended, so I had to leave early. It still counted as completed, but I wouldn't plan it that way. Leave a proper gap between the two.
 
@@ -188,7 +197,7 @@ I used two things to prepare:
 
 CDC also runs free online theory classes on Zoom, where the instructor goes through the key topics and the questions people often get wrong. They're worth joining.
 
-After passing the IE and booking the BTT, I booked practical lessons on 7 October. The earliest slot was already 24 November, about seven weeks away. So you can start booking lessons as soon as you pass the IE; there's no need to wait for the BTT.
+After passing the IE and booking the BTT, I started refreshing for practical lesson slots. It took four days of checking before I got any, on 7 October, and the earliest slot was already 24 November, about seven weeks away. So you can start booking lessons as soon as you pass the IE; there's no need to wait for the BTT.
 
 There's no fixed time when lesson slots open. CDC's website says there is "no session opening date" for any of its Ubi schemes and asks learners to check online regularly. I got both of my slots by refreshing in the morning, and I've heard that slots are released at irregular times. CDC also announced a booking limit in July 2024: at Ubi, automatic-car learners can book at most 5 practical lessons per month, and manual-car learners 8.
 
@@ -243,6 +252,8 @@ All CDC fees come out of your prepaid Stored Value account, so you need to top u
 
 I'm in this stage now. I'll update this post after the test.
 
+My Learning Journey in the app shows what's still ahead: Traffic Police simulator training (3 modules); three practical lesson modules, which include items such as VPC, LDCS and ATC; and finally a warm-up lesson and the Traffic Police practical test. The app also lists the BTT's expiry as Lifetime, so a pass doesn't run out.
+
 ## Converting a foreign licence
 
 If you hold a valid licence from another country, you only need to pass the BTT in Singapore; the FTT and the practical test aren't required. Foreigners need to convert after living in Singapore for 12 months. New citizens and PRs have three months from the change in status. Work Permit and S Pass holders receive a Class 3C licence after converting.
@@ -251,7 +262,7 @@ The Traffic Police publishes document checklists, one for China licences and one
 
 - If your licence isn't in English, you need an official translation from a translation company registered in Singapore. Your own translation won't be accepted.
 - If your licence doesn't show the date it was first issued, bring an extract of your driving record.
-- If you got your foreign licence **after** receiving your first Singapore pass (WP, EP, student pass and so on) or PR, or you're a Singapore citizen applying with a foreign licence, you must also prove you lived in the issuing country for one year, with at least six months of physical residence. Passports, employment documents, education certificates or tax documents can be used. This is to show you didn't go abroad just to get a licence.
+- If you got your foreign licence after receiving your first Singapore pass (WP, EP, student pass and so on) or PR, or you're a Singapore citizen applying with a foreign licence, you must also prove you lived in the issuing country for one year, with at least six months of physical residence. Passports, employment documents, education certificates or tax documents can be used. This is to show you didn't go abroad just to get a licence.
 - The Traffic Police page lists extra documents for some countries. For example, Malaysian licences need a letter from the Road Transport Department showing the licence classes, and Indian licences need an endorsement letter of validity from the Indian embassy.
 
 To apply, fill in the online pre-assessment form, book an appointment at Traffic Police Headquarters yourself, and bring the originals and photocopies of your documents. The counter decides on the spot whether you're eligible, and the Traffic Police may ask for more documents.
