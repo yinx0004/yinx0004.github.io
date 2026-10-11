@@ -132,3 +132,20 @@
   .notepad-author-info .notepad-post-author h2.author-name,
   .notepad-disqus h2.notepad-comments-header {
     font-size: 2.75rem; } }
+
+/* Links in post text use the same red as inline code, so underline them.
+   The TOC and buttons keep the theme's plain style. */
+.notepad-post-content p a,
+.notepad-post-content li:not(.toc-entry) a,
+.notepad-post-content td a,
+.notepad-post-content .translation-note a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px; }
+  .notepad-post-content p a:hover,
+  .notepad-post-content li:not(.toc-entry) a:hover,
+  .notepad-post-content td a:hover,
+  .notepad-post-content .translation-note a:hover {
+    text-decoration-thickness: 2px; }
+.notepad-post-content a.coffee-button {
+  text-decoration: none; }
