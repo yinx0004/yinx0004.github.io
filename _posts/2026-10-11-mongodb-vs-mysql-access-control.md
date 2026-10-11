@@ -10,7 +10,7 @@ tags: [MongoDB, MySQL, 鉴权, 访问控制, 副本集, 分片集群, 安全]
 description: "从 MySQL 的账号和权限模型出发，对照 MongoDB 的认证库、角色、localhost exception、keyfile 内部认证和分片集群用户，每个差异都用 MySQL 8.4 和 MongoDB 8.0 实测复现。"
 imagefeature: cover10.jpg
 comments: true
-featured: true
+featured: false
 toc: true
 ---
 从 MySQL 转到 MongoDB 的人，很少会在 CRUD 上卡住，卡住的往往是鉴权：用户明明建了，连接却报 Authentication failed；角色授了，权限却不是想象中的那样；副本集开了认证以后，节点之间互相连不上。原因多半是带着 MySQL 的心智模型去理解 MongoDB，而两者在几个关键地方并不一样。
