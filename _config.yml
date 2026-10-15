@@ -37,6 +37,8 @@ google_analytics:
 analytics:
   provider:       goatcounter
   goatcounter:    sherryyin
+  # Microsoft Clarity project ID; loaded on the live site only (jekyll.environment == production)
+  clarity:        yy3m8xfv4u
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         
