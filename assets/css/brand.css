@@ -149,3 +149,8 @@
     text-decoration-thickness: 2px; }
 .notepad-post-content a.coffee-button {
   text-decoration: none; }
+
+/* Long code blocks scroll inside the block instead of stretching the page */
+.notepad-post-content pre {
+  max-height: 480px;
+  overflow: auto; }
