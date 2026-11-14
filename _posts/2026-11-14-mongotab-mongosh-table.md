@@ -10,7 +10,7 @@ tags: [MongoDB, mongosh, MySQL, DBA, 工具]
 description: "MongoTab 是一个只有一个 JS 文件的 mongosh 小工具，把查询结果排成 MySQL 风格的表格和 \\G 竖排。这篇讲它解决什么问题、怎么用，以及几个设计上的取舍：不改 mongosh 本身、区分 null 和字段不存在、BSON 类型的显示方式、大文档拆子表。"
 imagefeature: cover4.jpg
 comments: true
-featured: true
+featured: false
 toc: true
 ---
 从 MySQL 转到 MongoDB 做运维，最先不习惯的往往不是命令，而是输出。在 MySQL 里看主从状态，`SHOW SLAVE STATUS\G` 一屏就能找到 `Seconds_Behind_Master`；看连接，`SHOW PROCESSLIST` 是一张表。到了 mongosh，`rs.status()` 返回的是一个嵌套了好几层的文档，3 个节点的副本集就有 139 行，想知道每个节点是什么状态、从哪个节点同步，要上下翻着找。
